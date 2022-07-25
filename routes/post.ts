@@ -90,4 +90,5 @@ router.get('/', async (request, response) => {
     response.status(500).json(err);
   }
 });
+
 export default router;

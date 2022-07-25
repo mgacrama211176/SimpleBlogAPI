@@ -5,16 +5,16 @@ import __dirname from './dirname.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import logger from 'morgan';
-import dbConnection from './connectDB.js';
+import dbConnection from './connectDB';
 import multer from 'multer';
 
 const app = express();
 
 //routes
-import authRouter from './routes/auth.js';
-import postsRouter from './routes/post.js';
-import usersRouter from './routes/users.js';
-import catergoryRouter from './routes/categories.js';
+import authRouter from './routes/auth';
+import postsRouter from './routes/post';
+import usersRouter from './routes/users';
+import catergoryRouter from './routes/categories';
 
 //DBConnection
 dbConnection('mongodb://localhost:27017/', 'SimpleBlogAPI');
